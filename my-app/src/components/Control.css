@@ -1,0 +1,443 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #242c35; */
+  color: white;
+}
+.control-main{
+  height: 610px;
+}
+.app {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(7, 6, 7, 0.56);
+  width: 100%;
+}
+
+.navbar h1 {
+  text-align: left;
+  padding: 10px;
+  width: 58%;
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-links a,
+.nav-links span {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-links span:hover,
+.nav-links a:hover {
+  color: rgb(0, 170, 255);
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  background-color: #242c35;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.profile-options a {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+  text-decoration: none;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-options a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Feedback Overlay styles */
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.feedback-content {
+  background-color: rgba(7, 6, 7);
+  color: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.feedback-content h2 {
+  margin-top: 0;
+  color: orange;
+}
+
+.feedback-content textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #242c35;
+  color: white;
+  border: black solid 2px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #242c35;
+  color: violet;
+}
+
+/* Other Page Specific Styles */
+.container {
+  border: white solid 2px;
+  margin: 30px auto;
+  height: 500px;
+  width: 90%;
+  background-color: #1f1f1f; 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+/* Language selection dropdown */
+.language-select {
+  margin-bottom: 20px; /* Space below dropdown */
+  display: flex; /* Flex container */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between label and select */
+}
+
+.language-select label {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.language-select select {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.language-select select:hover {
+  background-color: #444;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: white;
+  resize: none;
+  margin-bottom: 20px; /* Space below textarea */
+}
+
+/* Button container styling */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s;
+}
+
+.start-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+.stop-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.stop-btn:hover {
+  background-color: #a71d2a;
+}
+
+.save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #218838;
+}
+
+/* Processed text section styling */
+.processed-text {
+  height: 200px;
+  margin-top: 30px;
+  width: 100%;
+  max-height: 150px; /* Set a maximum height */
+  overflow-y: auto; /* Add vertical scrolling */
+  padding: 10px; /* Add padding for better readability */
+
+}
+
+.processed-text h3 {
+  font-size: 20px;
+  color: #ddd;
+  text-align: left;
+}
+
+.processed-text div {
+  background-color: #444;
+  padding: 20px; /* Increase padding for better visual space */
+  border-radius: 5px;
+  height: 90px;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 18px; /* Increase font size for better readability */
+  cursor: default; /* Disable cursor */
+}
+
+/* Footer styles (from Dashboard) */
+footer {
+  /* border: white solid 2px; */
+  background-color: rgb(7, 6, 7);
+  padding: 20px;
+  margin-top: auto; /* Pushes footer to the bottom only when there's extra space */
+  width: 100%;
+  text-align: center;
+}
+
+footer p,
+.footer-links a {
+  margin: 5px 0;
+}
+.recording-status{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-left: 45%;
+}
+.footer-links a {
+  color: #178582;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    margin-right: 10px;
+  }
+
+  .profile-circle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .buttons button {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar h1 {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .nav-links a,
+  .nav-links span {
+    margin: 5px 0;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .hello{
+    color: white;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 16px;
+  }
+
+  .language-select label,
+  .language-select select {
+    font-size: 14px;
+  }
+
+  .processed-text h3 {
+    font-size: 18px;
+  }
+
+  .processed-text div {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  footer {
+    display: none; /* Hide footer in mobile mode */
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+  .language-select label,
+  .language-select select {
+    font-size: 14px;
+  }
+/* Processed text section styling */
+.processed-text {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #444;
+  max-height: 150px; /* Set a maximum height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  padding: 10px; /* Add padding for better readability */
+}
+
+.processed-text h3 {
+  font-size: 20px;
+  color: #ddd;
+  text-align: left;
+}
+
+.processed-text div {
+  
+  text-align: justify;
+  padding: 20px; 
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 18px; /* Increase font size for better readability */
+  cursor: default; /* Disable cursor */
+  word-wrap: break-word; /* Break long words to avoid horizontal scroll */
+}

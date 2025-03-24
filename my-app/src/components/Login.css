@@ -1,0 +1,211 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  height: 50vh;
+}
+
+/* Left column styles */
+.left-column {
+  flex: 0.5; /* 30% width */
+  background-color: black !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  object-fit:fill;
+}
+
+/* Left image and gif styling */
+.left-image, .left-gif {
+  flex: 0.5;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%
+}
+h1{
+  color: white;
+}
+/* Right column styles */
+.right-column {
+  flex: 1; /* 70% width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black !important;
+}
+.card {
+  border: none;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+  background-color: gray;
+  width: 90%;
+  padding: 100px;
+  height: 100%;
+  margin: 90px;
+  margin-top: 50px;
+  max-width: 800px;
+}
+
+/* Card styles */
+.card-body {   
+  width: 100%; /* Adjust the width as needed */
+  max-width: 600px;
+  background-color: gray;
+  padding: 100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+/* Form input styles */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  color: black;
+}
+
+.form-control1, .form-control2, .form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid #ddd;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.form-control:focus, .form-control1:focus, .form-control2:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Eye icon position */
+.position-relative {
+  position: relative;
+}
+
+.eye-icon {
+  position: relative;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-60%);
+  cursor: pointer;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Alert styles */
+/* Add to your Login.css or a separate CSS file */
+.alert {
+position: relative; /* Make the alert container relative so the close button can be positioned absolutely */
+}
+
+.alert .close {
+position: absolute;
+top: 10px;  /* Adjust this for vertical positioning */
+right: 10px;  /* Align close button to the right */
+padding: 0;
+font-size: 1.25rem;  /* Adjust size if needed */
+background: transparent;
+border: none;
+}
+
+.alert .close span {
+font-size: 1.5rem;  /* Adjust icon size */
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Close button for alerts */
+.close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Timer styles */
+#timer {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    flex: 1;
+  }
+
+  .left-image, .left-gif {
+    height: auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,208 @@
+/* Register.css */
+
+/* General Styles */
+body {
+  /* Light background color */
+      font-family: "Arial", sans-serif; /* Font style */
+      margin: 0; /* Remove default margin */
+    }
+    
+    /* Row Styles */
+    .row {
+      display: flex; /* Use flexbox for layout */
+      height: 100vh; /* Full height for the row */
+    }
+    
+    /* Left Column Styles */
+    .left-column {
+      flex: 1; /* Take up half of the available width */
+      overflow: hidden; /* Prevent overflow of image */
+    }
+    
+    /* Image Styles */
+    .left-image {
+      height: 100%; /* Full height */
+      width: 100%; /* Full width */
+      object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    }
+    
+    /* Right Column Styles */
+    .right-column {
+      background-color: black !important;
+      flex: 1; /* Take up the other half of the available width */
+      display: flex; /* Use flexbox for alignment */
+      justify-content: center; /* Center the content */
+      align-items: center; /* Center the content */
+    }
+    .vg{
+      background-color: white;
+    }
+    /* Card Styles */
+    .card {
+      border: none; /* No border */
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+      background-color: #ffffff; /* White background for card */
+      width: 90%; /* Adjust width to fit within the column */
+      padding: 20px; /* Padding inside the card */
+      height: 85%; /* Full height to match left column */
+    }
+    
+    /* Heading Styles */
+    h1 {
+      font-size: 2rem; /* Font size for heading */
+      color: #333333; /* Darker color for heading */
+    }
+    
+    /* Form Group Styles */
+    .form-group {
+      margin-bottom: 1.5rem; /* Space between form groups */
+    }
+    
+    /* Input Field Styles */
+    .form-control1 {
+      margin-left: 5px;
+      padding: 15px; /* Padding for input fields */
+      border-radius: 5px; /* Rounded corners for inputs */
+      border: 1px solid #ced4da; /* Default border color */
+      transition: border-color 0.3s; /* Smooth border color transition */
+    }
+    .form-control2 {
+      margin-left: 6px;
+      padding: 15px; /* Padding for input fields */
+      border-radius: 5px; /* Rounded corners for inputs */
+      border: 1px solid #ced4da; /* Default border color */
+      transition: border-color 0.3s; /* Smooth border color transition */
+    }
+    .form-control3 {
+      margin-left: 44px;
+      padding: 15px; /* Padding for input fields */
+      border-radius: 5px; /* Rounded corners for inputs */
+      border: 1px solid #ced4da; /* Default border color */
+      transition: border-color 0.3s; /* Smooth border color transition */
+    }
+    .form-control {
+      margin-left: 5px;
+      padding: 15px; /* Padding for input fields */
+      border-radius: 5px; /* Rounded corners for inputs */
+      border: 1px solid #ced4da; /* Default border color */
+      transition: border-color 0.3s; /* Smooth border color transition */
+    }
+    .form-control:focus {
+      border-color: #007bff; /* Border color on focus */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+    }
+    
+    /* Button Styles */
+    .btn {
+      background-color: #dc3545; /* Red background for login button */
+      color: #fff; /* White text */
+      padding: 12px; /* Button padding */
+      border-radius: 5px; /* Rounded corners for buttons */
+      border: none; /* No border */
+      font-size: 1rem; /* Font size */
+      width: 100%; /* Full width */
+    }
+    
+    .btn:hover {
+      background-color: #c82333; /* Darker red on hover */
+    }
+    
+    /* Eye Icon Styles */
+    .position-relative {
+      position: relative; /* Positioning for the eye icon */
+    }
+    .eye-icon{
+      position: absolute;
+      top: 50%;
+      right: 10%;
+    }
+    /* Link Styles */
+    .lead {
+      margin: 10px 0; /* Space around the lead text */
+      color: #6c757d; /* Gray color for links */
+    }
+    
+    .lead a {
+      color: #007bff; /* Link color */
+      text-decoration: none; /* No underline */
+    }
+    
+    .lead a:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+    
+    /* Alert Styles */
+    .alert {
+      margin-bottom: 1rem; /* Space below alerts */
+      background-color: yellow; /* Yellow background for alerts */
+      color: black; /* Black text color for alerts */
+    }
+    
+    /* OTP Section Styles */
+    #otpSection {
+      margin-top: 20px; /* Space above the OTP section */
+    }
+    
+    #timer {
+      margin-top: 10px; /* Space above the timer */
+      font-weight: bold; /* Bold text */
+      color: red; /* Red color for timer */
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .card {
+        margin: 20px; /* Margin for smaller screens */
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Auto height for smaller screens */
+      }
+    }
+    
+    /* GIF Section Styles */
+    .right-gif {
+      height: 100%; /* Full height to match right column */
+      width: 100%; /* Full width */
+      object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    }
+    /* Alert Styles */
+    .alert {
+      margin-bottom: 1rem; /* Space below alerts */
+      padding: 15px 20px; /* Padding inside alert */
+      border-radius: 5px; /* Rounded corners for alerts */
+      position: relative; /* Position for close button */
+      font-size: 1.1rem; /* Slightly larger font size for alert text */
+      font-weight: bold; /* Bold alert text */
+    }
+    
+    .alert-success {
+      background-color: #d4edda; /* Light green background for success */
+      color: #155724; /* Dark green text for success */
+      border: 1px solid #c3e6cb; /* Light green border for success */
+    }
+    
+    .alert-danger {
+      background-color: #f8d7da; /* Light red background for error */
+      color: #721c24; /* Dark red text for error */
+      border: 1px solid #f5c6cb; /* Light red border for error */
+    }
+    
+    .alert-warning {
+      background-color: yellow; /* Yellow background for warning */
+      color: black; /* Black text color for warning */
+      border: 1px solid #ffeeba; /* Light yellow border */
+    }
+    
+    /* Close Button (X) Styles */
+    .close {
+      position: absolute; /* Absolute position inside alert */
+      top: 10px; /* Position from the top */
+      right: 20px; /* Position from the right */
+      font-size: 1.5rem; /* Increase the size of the 'X' */
+      color: #000; /* Black color for 'X' */
+      cursor: pointer; /* Pointer cursor */
+    }
+    
+    .close:hover {
+      color: #ff0000; /* Change to red when hovered */
+    }

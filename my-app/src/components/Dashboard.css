@@ -1,0 +1,289 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.hello {
+  color: white;
+}
+
+.dash {
+  text-align: center;
+  min-height: 100vh; /* Ensures the body takes full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(7, 6, 7, 0.56);
+  width: 100%;
+}
+
+.navbar h1 {
+  text-align: left;
+  padding: 10px;
+  width: 58%;
+  flex-grow: 1;
+}
+
+main {
+  background-color: #242c35;
+  flex-grow: 1; /* This allows the main content to take available space */
+  margin-bottom: 0; /* Removes any extra margin */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-links a,
+.nav-links span {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-links span:hover,
+.nav-links a:hover {
+  color: rgb(0, 170, 255);
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ff4081;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  background-color: #242c35;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.profile-options span {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+  text-decoration: none;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-options span:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.intro {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.intro p:nth-child(2) {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.actions {
+  margin-top: 50px;
+  flex-grow: 1; /* Allows this section to grow and push the footer down */
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 15px 30px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #0a1828;
+  color: violet;
+}
+
+footer {
+  background-color: rgb(7, 6, 7);
+  padding: 20px;
+  margin-top: 0; /* Ensures no extra margin */
+  width: 98vw;
+  text-align: center;
+}
+
+footer p,
+.footer-links a {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #178582;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Feedback Overlay styles */
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.8); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.feedback-content {
+  background-color: rgba(7, 6, 7);
+  color: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.feedback-content h2 {
+  margin-top: 0;
+  color: #ff4081;
+}
+
+.feedback-content textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #242c35;
+  color: white;
+  border: black solid 2px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #242c35;
+  color: violet;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    margin-right: 10px;
+  }
+
+  .profile-circle {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar h1 {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .nav-links a,
+  .nav-links span {
+    margin: 5px 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .buttons button {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 16px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .buttons button {
+    padding: 10px 20px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
